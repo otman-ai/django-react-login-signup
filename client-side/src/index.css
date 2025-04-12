@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Set the primary font */
+body {
+  @apply font-fira bg-transparent-white text-transparent-black;
+}
+
+
+
+/* Define your color variables */
+:root {
+  --white: #ffffff;
+  --transparent-black: #232020;
+  --primary: #F79256;
+  --secondary: #FFDEC9;
+  --transparent-white: #FDF5F2;
+  --text-color: var(--transparent-black);
+  --bg-color: var(--transparent-white);
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+a:hover {
+  color: darken(var(--primary), 10%);
+}
+
+/* Body */
+body {
+  margin: 0;
+
+}
+
+/* Headings */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--transparent-black);
+}
+
+
+  /* Style the spinner element */
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--secondary); /* Change the color as needed */
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    animation: spin 1s cubic-bezier(0.01, 0.01, 0.01, 0.01) infinite; /* Apply the spinner animation */
+  }
+  .spinner- {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--secondary); /* Change the color as needed */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s cubic-bezier(0.01, 0.01, 0.01, 0.01) infinite; /* Apply the spinner animation */
+  }
